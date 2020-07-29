@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/bttn.css/0.2.4/bttn.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<style>
+    .but > button {
+        background-color: rgb(49, 175, 184);
+        border-radius: 3px;
+        border: none;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col text-center my-3 but">
+                <button type="button" class="btn btn-primary">Bai 1</button>
+                <button type="button" class="btn btn-primary">Bai 2</button>
+                <button type="button" class="btn btn-primary">Bai 3</button>
+                <button type="button" class="btn btn-primary">Bai 4</button>
+                <button type="button" class="btn btn-primary">Bai 5</button>
+                <button type="button" class="btn btn-primary">Bai 6</button>
+                <button type="button" class="btn btn-primary">Bai 7</button>
+                <button type="button" class="btn btn-primary">Bai 8</button>
+            </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col">
+                <iframe src="Bai_1/index.html" width="100%" height="900px" frameborder="0"></iframe>
+              </div>
+          </div>
+      </div>
+    
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () { 
+                var index = $(this).index() + 1;
+                if (index >= 1) {
+                    $("iframe").attr("src", "Bai_"+ index + "/index.html");
+                }
+                
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
