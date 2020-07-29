@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+div {
+    border: 1px solid gray;
+}
+
+iframe {
+    border: none;
+    
+}
+
+.thucDon , .noiDung {
+    border: 1px solid gray;
+
+}
+
+.tieuDe {
+    width: 100%;
+}
+
+.thucDon {
+}
+
+.noiDung {
+    float: right;
+}
+

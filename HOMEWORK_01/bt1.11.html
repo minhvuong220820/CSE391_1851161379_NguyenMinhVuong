@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo form và các điều khiển trên form</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+
+        body {
+            overflow: scroll;
+        }
+        
+        form {
+            position: relative;
+            left: 30%;
+            width: 40%;
+            box-shadow: 10px 10px 5px 5px rgb(184, 182, 182);
+    
+        }
+        h1 {
+            width: 100%;
+            text-align: center;
+            color: coral;
+        }
+        table {
+            background-color: lightblue;
+            margin-left: 15%;
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 10px;
+        }
+    
+         table,tr, th,td{
+            border: 1px solid rgb(243, 56, 212);
+            margin: 0px;
+            padding: 0px;
+            font: tahoma;
+            font-size: 12px;
+        }
+        input {
+            width: 90%;
+            margin-left: 10px;
+        }
+    
+        button {
+            margin-left: 50%;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            
+            
+            $("button").click(function () { 
+                var str = $("#myInput").val();
+                $("#maN").text(str);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <form action="" method="post">
+        <h1>Đăng nhập</h1>
+        <table>
+            <tr>
+                <td>Mã người dùng:</td>
+                <td>
+                    <input type="text" id="myInput">
+                </td>
+            </tr>
+            <tr>
+                <td>Mật khẩu:</td>
+                <td>
+                    <input type="password" name="" id="userPassword">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="button" id="button1">Đồng ý</button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" id="maN" style="color: blue; text-align: center;"></td>
+            </tr>
+        </table>
+    </form>
+
+    
+</body>
+</html>
